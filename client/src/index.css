@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Slick Carousel Styles */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.logo,
+.bestS {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.icon {
+    width: 20px;
+    height: 100%;
+}
+
+
+#root {
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+/* Width */
+.scroll-container::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 0; /* Thinner width for vertical scrollbar */
+    height: 0.15rem; /* Thinner height for horizontal scrollbar */
+}
+
+/* Track */
+.scroll-container::-webkit-scrollbar-track, body::-webkit-scrollbar {
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+/* Handle */
+.scroll-container::-webkit-scrollbar-thumb , body::-webkit-scrollbar{
+    background: rgb(226, 226, 226);
+    border-radius: 4px; 
+}
+
+/* Handle on hover */
+.scroll-container::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar {
+    background: #777777;
+}
+
+/* Custom Carousel Styles */
+.slick-slider {
+    position: relative;
+}
+
+.slick-dots {
+    bottom: 20px !important;
+}
+
+.slick-dots li {
+    margin: 0 4px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: white;
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: white;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 20;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 0;
+}
